@@ -50,6 +50,13 @@ header {
 	font-size: 1.5rem;
 }
 
+.header__content li {
+	display: inline-block;
+	background: yellow;
+	padding: 10px;
+	margin: 0 10px;
+}
+
 h1 {
 	font-size: 2rem;
 }
