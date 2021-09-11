@@ -1,3 +1,8 @@
+:root {
+	font-family: 'Vollkorn', serif;
+	font-size: 16px;
+}
+
 body {
 	padding: 0;
 	margin: 0;
@@ -7,43 +12,23 @@ li {
 	list-style: none;
 }
 
-header,
-/* main, */
-footer {
-	/* max-width: 800px; */
-	margin: auto;
-	padding: 0 7%;
-}
-
 .wrapper {
 	min-height: 100vh;
 }
 
-main section:last-child {
-	padding-bottom: 100px;
+header,
+.container,
+footer {
+	margin: auto;
 }
 
-main {
-	max-width: 800px;
-	width: 66%;
-	padding: 0 2%;
-	display: inline-block;
+header,
+footer {
+	padding: 0 7%;
 }
 
-aside {
-	display: inline-block;
-	width: 25%;
-	padding: 0 1%;
-	vertical-align: top;
-}
-
-aside li {
-	display: inline-block;
-	background-color: blanchedalmond;
-	padding: 5px;
-	margin-bottom: 5px;
-	border-radius: 4px;
-
+.container {
+	max-width: 1000px;
 }
 
 header {
@@ -58,8 +43,41 @@ header {
 	align-items: center;
 }
 
+.header__content p {
+	font-family: 'Caveat', cursive;
+	max-width: 500px;
+	align-self: flex-end;
+	font-size: 1.5rem;
+}
+
 h1 {
-	font-size: large;
+	font-size: 2rem;
+}
+
+main section:last-child {
+	padding-bottom: 100px;
+}
+
+main {
+	padding: 0 1%;
+	width: 72%;
+	display: inline-block;
+}
+
+aside {
+	display: inline-block;
+	width: 25%;
+	/* padding: 0 1%; */
+	vertical-align: top;
+}
+
+aside li {
+	display: inline-block;
+	background-color: blanchedalmond;
+	padding: 5px;
+	margin-bottom: 5px;
+	border-radius: 4px;
+
 }
 
 figure {
@@ -92,6 +110,7 @@ footer a {
 
 a {
 	text-decoration: none;
+	transition: all .5s;
 }
 
 a:hover {
