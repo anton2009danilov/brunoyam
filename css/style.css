@@ -12,6 +12,11 @@ li {
 	list-style: none;
 }
 
+a {
+	text-decoration: none;
+	transition: all .5s;
+}
+
 .wrapper {
 	min-height: 100vh;
 }
@@ -53,9 +58,21 @@ header {
 
 .header__content li {
 	display: inline-block;
+}
+
+.header__content a {
+	display: block;
+	line-height: 2rem;
 	background: yellow;
-	padding: 10px;
-	margin: 0 10px;
+	height: 2rem;
+	margin: 5px 10px;
+	padding: 0 5px;
+}
+
+.header__content a:hover,
+aside a:hover {
+	filter: brightness(1.1);
+	transform: scale(1.02);
 }
 
 h1 {
@@ -71,17 +88,21 @@ main {
 aside {
 	display: inline-block;
 	width: 25%;
-	/* padding: 0 1%; */
 	vertical-align: top;
+}
+
+aside a {
+	display: block;
+	line-height: 30px;
+	height: 30px;
+	background-color: blanchedalmond;
+	border-radius: 4px;
+	padding: 0 3px;
 }
 
 aside li {
 	display: inline-block;
-	background-color: blanchedalmond;
-	padding: 0 5px;
-	margin-bottom: 5px;
-	border-radius: 4px;
-
+	margin: 5px;
 }
 
 figure {
@@ -116,12 +137,7 @@ footer a:last-of-type {
 	margin-top: 10px;
 }
 
-a {
-	text-decoration: none;
-	transition: all .5s;
-}
-
-a:hover {
+footer a:hover {
 	filter: drop-shadow(0 0 0.75rem white);
 }
 
