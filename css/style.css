@@ -29,6 +29,7 @@ footer {
 
 .container {
 	max-width: 1000px;
+	padding-bottom: 100px;
 }
 
 header {
@@ -61,10 +62,6 @@ h1 {
 	font-size: 2rem;
 }
 
-main section:last-child {
-	padding-bottom: 100px;
-}
-
 main {
 	padding: 0 1%;
 	width: 72%;
@@ -81,7 +78,7 @@ aside {
 aside li {
 	display: inline-block;
 	background-color: blanchedalmond;
-	padding: 5px;
+	padding: 0 5px;
 	margin-bottom: 5px;
 	border-radius: 4px;
 
@@ -101,18 +98,22 @@ img {
 }
 
 footer {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 80px;
+	text-align: center;
+	height: max-content;
 	background: grey;
 	font-size: 18px;
 	position: relative;
-	margin-top: -80px;
+	margin-top: -100px;
+	padding: 20px 10%;
 }
 
 footer a {
 	color: white;
+}
+
+footer a:last-of-type {
+	display: block;
+	margin-top: 10px;
 }
 
 a {
@@ -122,4 +123,40 @@ a {
 
 a:hover {
 	filter: drop-shadow(0 0 0.75rem white);
+}
+
+footer h2 {
+	display: inline-block;
+	width: 45%;
+	margin: 0;
+	vertical-align: middle;
+}
+
+.social {
+	display: inline-block;
+	width: 25%;
+	vertical-align: middle;
+	font-size: 1.5rem;
+	margin: 0 auto 0 0;
+	padding: 0;
+}
+
+.social li {
+	display: inline-block;
+	text-align: center;
+	margin: 0 3%;
+}
+
+.social a {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background: #fffffa;
+	border-radius: 50%;
+	color: brown;
+}
+
+.social i {
+	font-size: 30px;
+	line-height: 50px;
 }
