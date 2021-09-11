@@ -3,8 +3,12 @@ body {
 	margin: 0;
 }
 
+li {
+	list-style: none;
+}
+
 header,
-main,
+/* main, */
 footer {
 	/* max-width: 800px; */
 	margin: auto;
@@ -21,6 +25,25 @@ main section:last-child {
 
 main {
 	max-width: 800px;
+	width: 66%;
+	padding: 0 2%;
+	display: inline-block;
+}
+
+aside {
+	display: inline-block;
+	width: 25%;
+	padding: 0 1%;
+	vertical-align: top;
+}
+
+aside li {
+	display: inline-block;
+	background-color: blanchedalmond;
+	padding: 5px;
+	margin-bottom: 5px;
+	border-radius: 4px;
+
 }
 
 header {
