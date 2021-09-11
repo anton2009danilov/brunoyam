@@ -1,6 +1,26 @@
+/* 
+main color: #c36a12
+dark: #773B00
+less dark: #A05001
+bright: #F8AB5F
+less bright: #E48B33
+white: #FDF5EC
+black: #261503
+grey: 713F0A
+
+secondary color: #0e6579
+dark: #013C4A
+less dark: #045163
+bright: #3D889A
+less bright: #22798D
+
+shadow: f6dab6
+*/
+
 :root {
 	font-family: 'Vollkorn', serif;
 	font-size: 16px;
+	color: #c36a12;
 }
 
 body {
@@ -38,7 +58,7 @@ footer {
 }
 
 header {
-	background: bisque;
+	background: #fbecda;
 }
 
 .header__content {
@@ -63,16 +83,20 @@ header {
 .header__content a {
 	display: block;
 	line-height: 2rem;
-	background: yellow;
+	background-color: #0e6579;
+	border-radius: 2px;
+	color: #FDF5EC;
 	height: 2rem;
 	margin: 5px 10px;
 	padding: 0 5px;
+	font-size: 1rem;
 }
 
 .header__content a:hover,
 aside a:hover {
+	font-size: 1rem;
 	filter: brightness(1.1);
-	transform: scale(1.02);
+	transform: scale(1.048);
 }
 
 h1 {
@@ -121,15 +145,20 @@ img {
 footer {
 	text-align: center;
 	height: max-content;
-	background: grey;
+	background: #045163;
 	font-size: 18px;
 	position: relative;
 	margin-top: -100px;
 	padding: 20px 10%;
 }
 
+footer a,
+footer h2 {
+	color: #FDF5EC;
+}
+
 footer a {
-	color: white;
+	background: none;
 }
 
 footer a:last-of-type {
@@ -167,9 +196,9 @@ footer h2 {
 	display: inline-block;
 	width: 50px;
 	height: 50px;
-	background: #fffffa;
+	background: #F8AB5F;
 	border-radius: 50%;
-	color: brown;
+	color: #713F0A;
 }
 
 .social i {
