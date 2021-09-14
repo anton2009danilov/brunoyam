@@ -5,6 +5,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 li {
@@ -14,6 +15,20 @@ li {
 a {
 	text-decoration: none;
 }
+
+a:hover {
+	box-shadow: 0 0 7px #ffc;
+}
+
+h1 {
+	font-size: 1.5rem;
+	padding: 0 5px;
+}
+
+h2 {
+	margin-bottom: 10px;
+}
+
 
 body {
 	display: flex;
@@ -26,8 +41,10 @@ body {
 header,
 main,
 footer {
-	min-height: 100px;
-	width: 100vw;
+	min-height: 80px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
 }
 
 main {
@@ -46,29 +63,21 @@ header {
 }
 
 .container {
-	max-width: 800px;
+	max-width: 900px;
 	width: 100%;
-	margin: auto;
+	/* margin: auto; */
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
-	background: rgba(255, 255, 255, .5);
+	flex-grow: 2;
 }
 
 .logo {
 	display: flex;
 	align-items: center;
-	width: 70px;
 	height: 70px;
 	background: yellow;
-}
-
-header nav {
-	width: 70%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 }
 
 header nav ul {
@@ -115,28 +124,87 @@ header nav a {
 	justify-content: space-between;
 }
 
+.justify-content-center {
+	justify-content: center;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
 .mt-10 {
 	margin-top: 10px;
 }
 
-section:nth-of-type(1) img {
-	max-height: 300px;
+section {
+	width: 100%;
+	padding: 20px;
 }
 
-h1 {
-	margin-bottom: 10px;
+section:nth-of-type(1) {
+	background-color: beige;
 }
 
 section:nth-of-type(1) p {
 	margin-bottom: 10px;
 }
 
-.btn {
+section:nth-of-type(1) img {
+	max-height: 300px;
+}
+
+section:nth-of-type(1) .btn {
 	display: inline-block;
 	background-color: brown;
-	min-height: 40px;
 	padding: 10px;
 	margin: 5px;
 	width: max-content;
 	border-radius: 5px;
+}
+
+section:nth-of-type(2) {
+	background-color: #ddd;
+}
+
+section:nth-of-type(2) h2 {
+	margin-bottom: 40px;
+}
+
+section:nth-of-type(3) {
+	background-color: #eddfff;
+}
+
+section:nth-of-type(2),
+section:nth-of-type(3) {
+	padding-top: 70px;
+	padding-bottom: 100px;
+}
+
+section:nth-of-type(2) h2,
+section:nth-of-type(3) h2 {
+	font-size: 2rem;
+	text-align: center;
+}
+
+.advantage {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 200px;
+}
+
+.advantage img {
+	border-radius: 50%;
+}
+
+.card {
+	margin-top: 30px;
+	width: 20%;
+	min-width: 150px;
+	display: flex;
+	flex-direction: column;
+}
+
+.card-header {
+	border-bottom: 1px solid #000;
 }
