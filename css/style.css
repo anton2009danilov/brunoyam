@@ -149,11 +149,21 @@ section:nth-of-type(1) p {
 	margin-bottom: 10px;
 }
 
-section:nth-of-type(1) img {
+.main-section {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.main-section:nth-of-type(1) {
+	align-items: center;
+	justify-content: center;
+}
+
+.main-section:nth-of-type(1) img {
 	max-height: 300px;
 }
 
-section:nth-of-type(1) .btn {
+.main-section:nth-of-type(1) .btn {
 	display: inline-block;
 	background-color: brown;
 	padding: 10px;
@@ -162,28 +172,33 @@ section:nth-of-type(1) .btn {
 	border-radius: 5px;
 }
 
-section:nth-of-type(2) {
+.main-section:nth-of-type(2) {
 	background-color: #ddd;
 }
 
-section:nth-of-type(2) h2 {
+.main-section:nth-of-type(2) h2 {
 	margin-bottom: 40px;
 }
 
-section:nth-of-type(3) {
+.main-section:nth-of-type(3) {
 	background-color: #eddfff;
 }
 
-section:nth-of-type(2),
-section:nth-of-type(3) {
+.main-section:nth-of-type(2),
+.main-section:nth-of-type(3) {
 	padding-top: 70px;
 	padding-bottom: 100px;
 }
 
-section:nth-of-type(2) h2,
-section:nth-of-type(3) h2 {
+.main-section:nth-of-type(2) h2,
+.main-section:nth-of-type(3) h2,
+.main-section:nth-of-type(4) h2 {
 	font-size: 2rem;
 	text-align: center;
+}
+
+.main-section:nth-of-type(4) {
+	background-color: #fff;
 }
 
 .advantage {
@@ -207,4 +222,16 @@ section:nth-of-type(3) h2 {
 
 .card-header {
 	border-bottom: 1px solid #000;
+}
+
+.main-section:nth-of-type(4) section {
+	justify-content: space-around;
+	background-color: #aaf555;
+	margin: 3px;
+	width: 12%;
+	min-width: 150px;
+}
+
+.main-section:nth-of-type(4) section:last-of-type {
+	width: 26%;
 }
