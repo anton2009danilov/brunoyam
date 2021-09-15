@@ -1,5 +1,6 @@
 :root {
 	font-size: 16px;
+	font-family: sans-serif;
 }
 
 * {
@@ -13,11 +14,12 @@ li {
 }
 
 a {
+	color: inherit;
 	text-decoration: none;
 }
 
 a:hover {
-	box-shadow: 0 0 7px #ffc;
+	color: #1ED760;
 }
 
 h1 {
@@ -54,12 +56,14 @@ main {
 
 header,
 footer {
-	background: green;
+	background: #111;
+	color: #f3f8f5;
 }
 
 header {
 	display: flex;
 	align-items: center;
+	font-weight: 700;
 }
 
 .container {
@@ -75,8 +79,12 @@ header {
 .logo {
 	display: flex;
 	align-items: center;
-	height: 70px;
-	background: yellow;
+	width: 140px;
+	/* background: yellow; */
+}
+
+.logo svg {
+	color: red;
 }
 
 header nav ul {
@@ -85,14 +93,13 @@ header nav ul {
 	flex-wrap: wrap;
 }
 
+header nav ul li:nth-of-type(3) {
+	border-right: 2px solid #f3f8f5;
+}
+
 header nav a {
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	margin: 5px 10px;
-	width: 70px;
-	height: 70px;
-	background: aqua;
+	padding: 10px;
 }
 
 .d-flex {
