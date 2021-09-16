@@ -130,6 +130,10 @@ header nav a {
 	width: 50%;
 }
 
+.w-100 {
+	width: 100%;
+}
+
 .justify-content-between {
 	justify-content: space-between;
 }
@@ -207,7 +211,11 @@ header nav a {
 }
 
 .main-section:nth-of-type(2) {
-	background-color: #ddd;
+	background-color: #f3f8f5;
+}
+
+.main-section:nth-of-type(2) h2 {
+	font-size: 2.4rem;
 }
 
 .main-section:nth-of-type(2) h2,
@@ -221,6 +229,7 @@ header nav a {
 
 .main-section:nth-of-type(3) h2 {
 	margin: 0 auto 10px;
+	font-weight: 900;
 }
 
 .main-section:nth-of-type(2),
@@ -230,10 +239,11 @@ header nav a {
 }
 
 .main-section:nth-of-type(2) h2,
-.main-section:nth-of-type(3) h2,
-.main-section:nth-of-type(4) h2 {
-	font-size: 2rem;
+.main-section:nth-of-type(2) h3,
+.main-section:nth-of-type(2) p,
+.main-section:nth-of-type(3) h2 {
 	text-align: center;
+	width: 100%;
 }
 
 .footer-section {
@@ -253,6 +263,8 @@ header nav a {
 
 .advantage img {
 	border-radius: 50%;
+	height: 100px;
+	margin-bottom: 20px;
 }
 
 .card {
@@ -300,4 +312,12 @@ header nav a {
 
 .microtext {
 	font-size: .7rem;
+}
+
+.microtext span {
+	text-decoration: underline;
+}
+
+.microtext a:hover {
+	color: initial;
 }
