@@ -285,7 +285,6 @@ header nav a {
 
 .footer-section:first-of-type section {
 	flex-grow: 1;
-	background-color: #aaf555;
 	margin: 3px;
 	width: 15%;
 	min-width: 150px;
@@ -304,14 +303,32 @@ header nav a {
 	margin: 15px;
 }
 
+.social a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #222326;
+	margin: 5px;
+	font-size: 1.4rem;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
 .info {
 	flex: 1;
 }
 
 .info ul {
 	display: flex;
-	justify-content: space-around;
+	flex-wrap: wrap;
+	/* justify-content: space-around; */
 	padding-right: 20%;
+	padding-left: 5%;
+}
+
+.info ul li {
+	margin: 5px;
 }
 
 .microtext {
@@ -348,4 +365,32 @@ header nav a {
 	height: 320px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+}
+
+.footer-section h2 {
+	font-size: .7rem;
+	color: #919496;
+	text-transform: uppercase;
+}
+
+.footer-section:first-of-type li {
+	margin: 15px 0;
+	font-size: .8rem;
+}
+
+.footer-section:last-of-type {
+	font-size: .7rem;
+	color: #919496;
+	align-items: center;
+}
+
+.footer-section:last-of-type section:last-of-type {
+	height: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.lang i {
+	margin-right: 5px;
 }
