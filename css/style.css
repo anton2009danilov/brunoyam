@@ -190,7 +190,6 @@ header nav a {
 
 .main-section:nth-of-type(1) .btn:hover {
 	transform: scale(1.05);
-	color: initial;
 }
 
 .start-btn {
@@ -276,7 +275,6 @@ header nav a {
 	background-color: #fff;
 	border-radius: 20px;
 	box-shadow: 0 0 7px #979696;
-	;
 }
 
 .card-header {
@@ -322,7 +320,6 @@ header nav a {
 .info ul {
 	display: flex;
 	flex-wrap: wrap;
-	/* justify-content: space-around; */
 	padding-right: 20%;
 	padding-left: 5%;
 }
