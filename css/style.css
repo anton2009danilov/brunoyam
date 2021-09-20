@@ -341,12 +341,18 @@ header nav a {
 }
 
 .card li {
-	display: flex;
-	align-items: flex-start;
 	margin-top: 15px;
 }
 
-.card li img {
+.card-content li::before {
+	content: "";
+	display: inline-block;
+	width: 14px;
+	height: 5px;
+	border-left: 3px solid black;
+	border-bottom: 3px solid black;
+	transform: rotate(-45deg);
+	margin-bottom: 5px;
 	margin-right: 5px;
 }
 
