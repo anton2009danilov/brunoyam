@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/media.css">
 	<title>Brunoyam Flexbox</title>
 </head>
 <body>
@@ -14,8 +15,22 @@
 			<a href="#" class="logo">
 				<img src="./img/logo.svg" alt="logo img">
 			</a>
-			<nav>
+			<nav class="header__navigation">
 				<ul>
+					<li><a href="#">Premium</a></li>
+					<li><a href="#">Справка</a></li>
+					<li><a href="#">Скачать</a></li>
+					<li><a href="#">Зарегистрироваться</a></li>
+					<li><a href="#">Вход в аккаунт</a></li>
+				</ul>
+			</nav>
+			<nav class="header__burger">
+				<a href="#" class="burger__btn" id="header-burger-btn">
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+				</a>
+				<ul class="burger__list" id="header-burger-list">
 					<li><a href="#">Premium</a></li>
 					<li><a href="#">Справка</a></li>
 					<li><a href="#">Скачать</a></li>
@@ -262,5 +277,6 @@
 			</section>
 		</div>
 	</footer>
+	<script src="./js/script.js"></script>
 </body>
 </html>

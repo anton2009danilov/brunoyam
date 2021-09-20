@@ -1,0 +1,10 @@
+@media (max-width: 920px) {
+	.header__navigation {
+		display: none;
+	}
+
+	.header__burger {
+		display: inline-block;
+	}
+
+}
