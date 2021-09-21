@@ -20,6 +20,14 @@
 	.premium-start__img--small-screen {
 		display: none;
 	}
+
+	.premium-perks__list {
+		justify-content: space-evenly;
+	}
+
+	.premium-perks__list-item {
+		width: 40%;
+	}
 }
 
 @media (max-width: 440px) {
@@ -33,5 +41,17 @@
 
 	.btn {
 		font-size: 1rem;
+	}
+
+	.premium-perks__list-item {
+		width: 100%;
+	}
+
+	.premium-perks__list-item img {
+		height: 150px;
+	}
+
+	.premium-perks__title {
+		font-size: 1.8rem;
 	}
 }

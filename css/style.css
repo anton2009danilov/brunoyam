@@ -89,8 +89,6 @@ header {
 	filter: brightness(.9);
 }
 
-
-
 header nav ul {
 	width: 100%;
 	display: flex;
@@ -160,20 +158,22 @@ header nav a {
 }
 
 .btn {
-	display: inline-block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	max-width: 100%;
-	text-align: center;
 	padding: 15px 45px;
 	margin: 10px 5px;
 	border-radius: 30px;
-	font-size: 1.4rem;
+	font-size: 1rem;
+	text-transform: uppercase;
 }
 
 .main-section:nth-of-type(1) .btn:hover {
 	transform: scale(1.05);
 }
 
-.start-btn {
+.btn-start {
 	background-color: #111;
 	color: #f3f8f5;
 }
@@ -186,38 +186,38 @@ header nav a {
 	background-color: #D7F5DB;
 }
 
-.main-section:nth-of-type(2) {
+.premium-perks {
 	background-color: #f3f8f5;
 }
 
-.main-section:nth-of-type(2) h2 {
+.premium-perks__title {
 	font-size: 2.4rem;
 }
 
-.main-section:nth-of-type(2) h2,
-.main-section:nth-of-type(3) h2+p {
+.premium-perks h2,
+.premium-options h2+p {
 	margin: 0 auto 40px;
 }
 
-.main-section:nth-of-type(3) {
+.premium-options {
 	background-color: #EFEFEF;
 }
 
-.main-section:nth-of-type(3) h2 {
+.premium-options h2 {
 	margin: 0 auto 10px;
 	font-weight: 900;
 }
 
-.main-section:nth-of-type(2),
-.main-section:nth-of-type(3) {
-	padding-top: 70px;
-	padding-bottom: 100px;
+.premium-perks,
+.premium-options {
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
-.main-section:nth-of-type(2) h2,
-.main-section:nth-of-type(2) h3,
-.main-section:nth-of-type(2) p,
-.main-section:nth-of-type(3) h2 {
+.premium-perks h2,
+.premium-perks h3,
+.premium-perks p,
+.premium-options h2 {
 	text-align: center;
 	width: 100%;
 }
@@ -230,14 +230,15 @@ header nav a {
 	justify-content: space-between;
 }
 
-.advantage {
+.premium-perks__list-item {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 200px;
+	width: 20%;
+	margin: 15px 0;
 }
 
-.advantage img {
+.premium-perks__list-item img {
 	border-radius: 50%;
 	height: 100px;
 	margin-bottom: 20px;
@@ -430,4 +431,15 @@ header nav a {
 	display: none;
 	max-width: 30%;
 	float: right;
+}
+
+.premium-perks__list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.nowrap-word {
+	white-space: nowrap;
 }
