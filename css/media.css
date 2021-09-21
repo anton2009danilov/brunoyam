@@ -7,4 +7,31 @@
 		display: inline-block;
 	}
 
+	.premium-start__img--big-screen {
+		display: none;
+	}
+
+	.premium-start__img--small-screen {
+		display: block;
+	}
+}
+
+@media (max-width: 720px) {
+	.premium-start__img--small-screen {
+		display: none;
+	}
+}
+
+@media (max-width: 440px) {
+	h1 {
+		font-size: 1.8rem;
+	}
+
+	.premium-start__text {
+		font-size: 1.2rem;
+	}
+
+	.btn {
+		font-size: 1rem;
+	}
 }
