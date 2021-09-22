@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/media.css">
 	<title>Brunoyam Flexbox</title>
 </head>
 <body>
@@ -14,8 +15,22 @@
 			<a href="#" class="logo">
 				<img src="./img/logo.svg" alt="logo img">
 			</a>
-			<nav>
+			<nav class="header__navigation">
 				<ul>
+					<li><a href="#">Premium</a></li>
+					<li><a href="#">Справка</a></li>
+					<li><a href="#">Скачать</a></li>
+					<li><a href="#">Зарегистрироваться</a></li>
+					<li><a href="#">Вход в аккаунт</a></li>
+				</ul>
+			</nav>
+			<nav class="header__burger">
+				<a href="#" class="burger__btn" id="header-burger-btn">
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+				</a>
+				<ul class="burger__list" id="header-burger-list">
 					<li><a href="#">Premium</a></li>
 					<li><a href="#">Справка</a></li>
 					<li><a href="#">Скачать</a></li>
@@ -26,180 +41,168 @@
 		</div>
 	</header>
 	<main>
-			<section class="main-section">
+			<section class="main-section premium-start">
 				<div class="container">
-					<div class="d-flex flex-col w-50 justify-content-between flex-grow-1">
+					<div class="premium-start__content">
 						<h1>Получи 3 месяца Premium бесплатно</h1>
-						<p>
+						<img src="./img/business-bird.jpg" alt="business-bird image" class="premium-start__img premium-start__img--small-screen">
+						<p class="premium-start__text">
 							Слушайте музыку без рекламы, офлайн и не только. Отменить подписку можно в любой момент.
 						</p>
-						<div class="flex mt-10">
-							<a href="#" class="btn start-btn">Начать</a>
-							<a href="#" class="btn">посмотреть варианты подписки</a>
+						<div class="premium-start__btns-block">
+							<a href="#" class="btn btn-start">Начать</a>
+							<a href="#premium-options" class="btn">посмотреть варианты подписки</a>
 						</div>
 						<p class="microtext">
 							После этого будет взиматься ежемесячная плата. Только для новых пользователей Premium. Предложение не распространяется на планы «Premium для семьи» и «Premium для двоих».
 							Действуют <a href="#" class="terms">Условия использования</a>.
 						</p>
 					</div>
-					<img src="./img/business-bird.jpg" alt="business-bird image">
+					<img src="./img/business-bird.jpg" alt="business-bird image" class="premium-start__img premium-start__img--big-screen">
 				</div>
 			</section>
-			<section class="main-section">
+			<section class="main-section premium-perks">
 				<div class="container">
-					<h2>Что дает Premium-подписка</h2>
-					<div class="d-flex flex-wrap justify-content-between w-100">
-						<div class="advantage">
-							<img src="./img/andvantage_1.png" alt="advantage img">
+					<h2 class="premium-perks__title">Что дает <span class="nowrap-word">Premium-подписка</span></h2>
+					<ul class="premium-perks__list">
+						<li class="premium-perks__list-item">
+							<img src="./img/andvantage_1.png" alt="premium-perks__list-item img">
 							<h3>Скачивайте треки</h3>
 							<p>Офлайн-режим</p>
-						</div>
-						<div class="advantage">
-							<img src="./img/andvantage_2.png" alt="advantage img">
+						</li>
+						<li class="premium-perks__list-item">
+							<img src="./img/andvantage_2.png" alt="premium-perks__list-item img">
 							<h3>Музыка без рекламы</h3>
 							<p>Больше никаких перерывов</p>
-						</div>
-						<div class="advantage">
-							<img src="./img/andvantage_3.png" alt="advantage img">
+						</li>
+						<li class="premium-perks__list-item">
+							<img src="./img/andvantage_3.png" alt="premium-perks__list-item img">
 							<h3>Включайте любую музыку</h3>
 							<p>И на мобильных устройствах тоже</p>
-						</div>
-						<div class="advantage">
-							<img src="./img/andvantage_4.png" alt="advantage img">
+						</li>
+						<li class="premium-perks__list-item">
+							<img src="./img/andvantage_4.png" alt="premium-perks__list-item img">
 							<h3>Сколько угодно скипов</h3>
 							<p>Просто включите нужный трек</p>
-						</div>
-					</div>
+						</li>
+					</ul>
 				</div>
 			</section>
-			<section class="main-section">
+			<section class="main-section premium-options" id="premium-options">
 				<div class="container">
 					<h2>Выберите свой Premium</h2>
 					<p>Слушай что угодно и когда захочешь — на телефоне, динамике и других устройствах</p>
-					<div class="d-flex flex-wrap justify-content-between">
-						<div class="card">
-							<div class="card-header">
-								<span>3 месяца бесплатно</span>
+					<ul class="premium-options__list">
+						<li class="card">
+							<div class="card__header">
+								<span class="promo">3 месяца бесплатно</span>
 								<h3>Индивидуальная подписка</h3>
 								<p>169₽ в месяц после пробного периода</p>
 								<p>1 аккаунт</p>
 							</div>
-							<div class="card-content">
+							<div class="card__content">
 								<ul>
 									<li>
-										<img src="./img/checkmark.svg" alt="checkmark icon"/>
 										Музыка без рекламы
 									</li>
 									<li>
-										<img src="./img/checkmark.svg" alt="checkmark icon"/>
 										Слушайте треки офлайн</li>
 									<li>
-										<img src="./img/checkmark.svg" alt="checkmark icon"/>
 										Выбор любого трека</li>
 								</ul>
 							</div>
-							<div class="card-bottom">
-								<a href="#" class="btn start-btn">Начать</a>
+							<div class="card__bottom">
+								<a href="#" class="btn btn-start">Начать</a>
 								<p class="microtext">
 									После этого будет взиматься ежемесячная плата. Только для новых пользователей Premium. Предложение не распространяется на планы «Premium для семьи» и «Premium для двоих». Действуют <a href="#" class="terms">Условия использования</a>.
 								</p>
 							</div>
-						</div>
-						<div class="card">
-							<div class="card-header">
-								<span>Месяц бесплатно</span>
+						</li>
+						<li class="card">
+							<div class="card__header">
+								<span class="promo">Месяц бесплатно</span>
 								<h3>Premium для двоих</h3>
 								<p>219₽ в месяц после пробного периода</p>
 								<p>2 аккаунта</p>
 							</div>
-							<div class="card-content">
+							<div class="card__content">
 								<ul>
 									<li>
-										<img src="./img/checkmark.svg" alt="checkmark icon"/>
 										Два Premium-аккаунта для тех, кто живет вместе</li>
 									<li>
-										<img src="./img/checkmark.svg" alt="checkmark icon"/>
 										Микс для двоих — плейлист с музыкой, которая нравится вам обоим (обновляется регулярно)
 									</li>
 									<li>
-										<img src="./img/checkmark.svg" alt="checkmark icon"/>
 										Доступ к музыке по вашему выбору, офлайн и без рекламы</li>
 								</ul>
 							</div>
-							<div class="card-bottom">
-								<a href="#" class="btn start-btn">Начать</a>
+							<div class="card__bottom">
+								<a href="#" class="btn btn-start">Начать</a>
 								<p class="microtext">
 									Действуют <a href="#" class="terms">Условия использования</a>. Бесплатная подписка на месяц доступна только для новых пользователей Premium.
 								</p>
 							</div>
-						</div>
-						<div class="card">
-							<div class="card-header">
-								<span>Месяц бесплатно</span>
+						</li>
+						<li class="card">
+							<div class="card__header">
+								<span class="promo">Месяц бесплатно</span>
 								<h3>Premium для семьи</h3>
 								<p>269₽ в месяц после пробного периода</p>
 								<p>До 6 аккаунтов</p>
 							</div>
-							<div class="card-content">
+							<div class="card__content">
 								<ul>
 									<li>
-										<img src="./img/checkmark.svg" alt="checkmark icon"/>
 										Шесть Premium-аккаунтов для тех, кто живет вместе</li>
 									<li>
-										<img src="./img/checkmark.svg" alt="checkmark icon"/>
 										Микс для семьи — плейлист с музыкой, которая нравится всей семье (обновляется регулярно)
 									</li>
 									<li>
-										<img src="./img/checkmark.svg" alt="checkmark icon"/>
 										Музыку для взрослых можно заблокировать</li>
 									<li>
-										<img src="./img/checkmark.svg" alt="checkmark icon"/>
 										Доступ к музыке по вашему выбору, офлайн и без рекламы</li>
 								</ul>
 							</div>
-							<div class="card-bottom">
-								<a href="#" class="btn start-btn">Начать</a>
+							<div class="card__bottom">
+								<a href="#" class="btn btn-start">Начать</a>
 								<p class="microtext">
 									Действуют <a href="#" class="terms">Условия использования</a>. Бесплатная подписка на месяц доступна только для новых пользователей Premium.
 								</p>
 							</div>
-						</div>
-						<div class="card">
-							<div class="card-header">
-								<span>3 месяца бесплатно</span>
+						</li>
+						<li class="card">
+							<div class="card__header">
+								<span class="promo">3 месяца бесплатно</span>
 								<h3>Premium для студентов</h3>
 								<p>85₽ в месяц после пробного периода</p>
 								<p>1 аккаунт</p>
 							</div>
-							<div class="card-content">
+							<div class="card__content">
 								<ul>
 									<li>
-										<img src="./img/checkmark.svg" alt="checkmark icon"/>
 										Скидка для студентов аккредитованных вузов</li>
 									<li>
-										<img src="./img/checkmark.svg" alt="checkmark icon"/>
 										Музыка без рекламы</li>
 									<li>
-										<img src="./img/checkmark.svg" alt="checkmark icon"/>
 										Слушайте треки офлайн</li>
 									<li>
-										<img src="./img/checkmark.svg" alt="checkmark icon"/>
 										Выбор любого трека</li>
 								</ul>
 							</div>
-							<div class="card-bottom">
-								<a href="#" class="btn start-btn">Начать</a>
+							<div class="card__bottom">
+								<a href="#" class="btn btn-start">Начать</a>
 								<p class="microtext">
 									Только для учащихся аккредитованных вузов. Бесплатная подписка на три месяца доступна только для новых пользователей Premium. Действуют <a href="#" class="terms">Условия использования</a> скидки для студентов.
 								</p>
 							</div>
-						</div>
+						</li>
+					</ul>
 				</div>
 			</section>
 	</main>
-	<footer>
+	<footer class="footer">
 		<div class="container">
-			<section class="footer-section">
+			<section class="footer-section footer__links-block">
 				<section>
 					<a href="#" class="logo">
 						<img src="./img/logo.svg" alt="logo img">
@@ -259,7 +262,7 @@
 					</nav>
 				</section>
 			</section>
-			<section class="footer-section">
+			<section class="footer-section footer__info-block">
 				<nav class="info">
 					<ul>
 						<li><a href="#">Юридическая информация</a></li>
@@ -276,5 +279,6 @@
 			</section>
 		</div>
 	</footer>
+	<script src="./js/script.js"></script>
 </body>
 </html>

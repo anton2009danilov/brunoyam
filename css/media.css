@@ -1,0 +1,93 @@
+@media (max-width: 1120px) {
+
+	.card__content {
+		height: 240px;
+	}
+
+	.card {
+		width: 40%;
+	}
+}
+
+@media (max-width: 920px) {
+	.header__navigation {
+		display: none;
+	}
+
+	.header__burger {
+		display: inline-block;
+	}
+
+	.premium-start__img--big-screen {
+		display: none;
+	}
+
+	.premium-start__img--small-screen {
+		display: block;
+	}
+}
+
+@media (max-width: 720px) {
+	.premium-start__img--small-screen {
+		display: none;
+	}
+
+	.premium-perks__list {
+		justify-content: space-evenly;
+	}
+
+	.premium-perks__list-item {
+		width: 40%;
+	}
+
+	.card {
+		width: 100%;
+	}
+
+	.card__content {
+		height: max-content;
+	}
+
+	.footer .container {
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+
+	.footer__links-block section {
+		width: 45%;
+	}
+
+	.footer__links-block {
+		padding-bottom: 0;
+	}
+}
+
+@media (max-width: 440px) {
+	h1 {
+		font-size: 1.8rem;
+	}
+
+	.premium-start__text {
+		font-size: 1.2rem;
+	}
+
+	.btn {
+		font-size: 1rem;
+	}
+
+	.premium-perks__list-item {
+		width: 100%;
+	}
+
+	.premium-perks__list-item img {
+		height: 150px;
+	}
+
+	.premium-perks__title {
+		font-size: 1.8rem;
+	}
+
+	.footer .logo {
+		margin-bottom: 20px;
+	}
+}
