@@ -1,3 +1,14 @@
+@media (max-width: 1120px) {
+
+	.card__content {
+		height: 240px;
+	}
+
+	.card {
+		width: 40%;
+	}
+}
+
 @media (max-width: 920px) {
 	.header__navigation {
 		display: none;
@@ -27,6 +38,14 @@
 
 	.premium-perks__list-item {
 		width: 40%;
+	}
+
+	.card {
+		width: 100%;
+	}
+
+	.card__content {
+		height: max-content;
 	}
 }
 
