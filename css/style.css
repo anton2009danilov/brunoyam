@@ -270,14 +270,14 @@ header nav a {
 	border-bottom: 1px solid #000;
 }
 
-.footer-section:first-of-type section {
+.footer__links-block section {
 	flex-grow: 1;
 	margin: 3px;
 	width: 15%;
 	min-width: 150px;
 }
 
-.footer-section:first-of-type section:last-of-type {
+.footer__links-block section:last-of-type {
 	flex-grow: 3;
 }
 
@@ -365,7 +365,7 @@ header nav a {
 	text-transform: uppercase;
 }
 
-.footer-section:first-of-type li {
+.footer__links-block li {
 	margin: 15px 0;
 	font-size: .8rem;
 }

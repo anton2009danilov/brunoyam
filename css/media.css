@@ -47,6 +47,19 @@
 	.card__content {
 		height: max-content;
 	}
+
+	.footer .container {
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+
+	.footer__links-block section {
+		width: 45%;
+	}
+
+	.footer__links-block {
+		padding-bottom: 0;
+	}
 }
 
 @media (max-width: 440px) {
@@ -72,5 +85,9 @@
 
 	.premium-perks__title {
 		font-size: 1.8rem;
+	}
+
+	.footer .logo {
+		margin-bottom: 20px;
 	}
 }
