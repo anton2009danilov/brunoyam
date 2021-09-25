@@ -1,1 +1,0 @@
-Brunoyam shool homeworks
