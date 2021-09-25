@@ -16,6 +16,8 @@ body {
 	font-family: Roboto;
 	font-size: 12px;
 	color: #424242;
+	display: flex;
+	flex-direction: column;
 }
 
 h1,
@@ -119,7 +121,12 @@ button {
 .nav {
 	position: relative;
 	max-width: 800px;
+	width: 100%;
 	margin: 5px auto;
+}
+
+.nav-bg-screen {
+	display: none;
 }
 
 .burger-btn {
@@ -129,17 +136,20 @@ button {
 
 .nav__list {
 	display: flex;
+	font-size: 1rem;
+	justify-content: space-around;
+}
+
+.nav__list--burger {
+	display: flex;
 	flex-direction: column;
 	width: 80%;
-	padding: 0;
-	margin: 0;
 	position: absolute;
 	top: 0;
 	left: 18%;
 	z-index: 10;
 	background-color: #fff;
 	box-shadow: 0 0 5px #000;
-	font-size: 1rem;
 }
 
 .nav__item {
@@ -167,11 +177,12 @@ button {
  *
  */
 
-main {
+.main {
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
 	max-width: 800px;
 	margin-left: auto;
 	margin-right: auto;
+	flex-grow: 1;
 }
 
 /*
@@ -182,7 +193,6 @@ main {
 
 .content {
 	display: flex;
-	flex-direction: column;
 	flex-wrap: wrap;
 	font-size: .9rem;
 }
@@ -200,15 +210,18 @@ main {
 	position: relative;
 	background-image: url("./images/dog.jpg");
 	background-size: cover;
+	background-position: center;
 }
 
 .hero__description {
-	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 	background-color: #000;
 	background-color: rgba(0, 0, 0, 0.7);
 	position: absolute;
 	bottom: 0;
-	height: 50%;
+	height: 48%;
 	width: 100%;
 	color: #fff;
 	padding: 1em;
@@ -221,10 +234,11 @@ main {
  */
 
 .top-news {
-	width: 320px;
+	max-width: 400px;
 	min-height: 300px;
 	border-bottom: 1px solid #e0e0e0;
 	padding: 1em;
+	margin: 0 auto;
 }
 
 .news__title {
@@ -274,6 +288,7 @@ main {
 
 .weather {
 	/* width: 320px; */
+	width: 100%;
 	padding: 1em;
 }
 
@@ -341,15 +356,22 @@ main {
 .snippet {
 	display: flex;
 	flex-wrap: wrap;
+	align-items: center;
 	margin: 24px 0;
+	box-shadow: 1px 1px 7px grey;
+	padding: 8px;
 }
 
 .snippet__thumbnail {
 	max-width: 300px;
 	width: 85%;
-	/* height: ; */
+	min-height: 150px;
 	/* margin-right: 1em; */
 	margin: 0 auto;
+}
+
+.snippet__text {
+	width: 100%;
 }
 
 .snippet__title {
@@ -374,6 +396,7 @@ main {
 
 .footer {
 	display: flex;
+	justify-content: center;
 	border-top: 1px solid #e0e0e0;
 	/* padding: 1em; */
 	width: 100%;
@@ -382,6 +405,7 @@ main {
 
 .footer ul {
 	width: 100%;
+	max-width: 800px;
 	display: flex;
 	justify-content: space-around;
 }
@@ -403,3 +427,39 @@ main {
  * Media
  *
  */
+
+@media (min-width: 480px) {
+	.snippet__thumbnail {
+		width: 45%;
+	}
+
+	.snippet__text {
+		width: 50%;
+	}
+
+	.hero__description {
+		height: 40%;
+	}
+
+	.nav-sm-screen {
+		display: none;
+	}
+
+	.nav-bg-screen {
+		display: block;
+	}
+}
+
+@media (min-width: 640px) {
+	.hero {
+		min-width: 50%;
+	}
+
+	.top-news {
+		width: 50%;
+	}
+
+	.weather__next__item {
+		width: 20%;
+	}
+}

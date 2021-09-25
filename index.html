@@ -25,9 +25,9 @@
       </div>
     </header>
 
-    <nav id="drawer" class="nav">
+    <nav class="nav nav-sm-screen">
       <button class="burger-btn" id="burger-btn"><i class="fas fa-bars"></i></button>
-      <ul class="nav__list d-none" id="burger-content">
+      <ul class="nav__list nav__list--burger d-none" id="burger-content">
         <li class="nav__item"><a href="#">News</a></li>
         <li class="nav__item"><a href="#">Events</a></li>
         <li class="nav__item"><a href="#">Culture</a></li>
@@ -35,7 +35,16 @@
       </ul>
     </nav>
 
-    <main>
+	<nav class="nav nav-bg-screen">
+		<ul class="nav__list">
+		  <li class="nav__item"><a href="#">News</a></li>
+		  <li class="nav__item"><a href="#">Events</a></li>
+		  <li class="nav__item"><a href="#">Culture</a></li>
+		  <li class="nav__item"><a href="#">Blog</a></li>
+		</ul>
+	  </nav>
+
+    <main class="main">
       <section class="content">
         <section class="hero">
           <article class="hero__description">
@@ -229,14 +238,14 @@
           </ul>
         </section>
       </section>
-      <footer class="footer">
-        <ul>
-          <li><a href="#">Contact us</a></li>
-          <li><a href="#">Follow us on Twitter</a></li>
-          <li><a href="#">RSS</a></li>
-        </ul>
-      </footer>
     </main>
+	<footer class="footer">
+	  <ul>
+		<li><a href="#">Contact us</a></li>
+		<li><a href="#">Follow us on Twitter</a></li>
+		<li><a href="#">RSS</a></li>
+	  </ul>
+	</footer>
 
     <script src="./script/script.js"></script>
   </body>
