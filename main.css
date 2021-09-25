@@ -356,7 +356,6 @@ button {
 .snippet {
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
 	margin: 24px 0;
 	box-shadow: 1px 1px 7px grey;
 	padding: 8px;
@@ -431,6 +430,8 @@ button {
 @media (min-width: 480px) {
 	.snippet__thumbnail {
 		width: 45%;
+		max-height: 200px;
+		align-self: center;
 	}
 
 	.snippet__text {
