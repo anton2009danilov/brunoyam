@@ -1,252 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brighton Times</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="main.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__inner">
-        <img
-          class="header__logo"
-          src="images/city.png"
-          alt="iconic view of a cityscape"
-        />
-        <h1 class="header__title">The Brighton Times</h1>
-      </div>
-    </header>
 
-    <nav class="nav nav-sm-screen">
-      <button class="burger-btn" id="burger-btn"><i class="fas fa-bars"></i></button>
-      <ul class="nav__list nav__list--burger d-none" id="burger-content">
-        <li class="nav__item"><a href="#">News</a></li>
-        <li class="nav__item"><a href="#">Events</a></li>
-        <li class="nav__item"><a href="#">Culture</a></li>
-        <li class="nav__item"><a href="#">Blog</a></li>
-      </ul>
-    </nav>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>My "FCC: Survey Form"</title>
+</head>
 
-	<nav class="nav nav-bg-screen">
-		<ul class="nav__list">
-		  <li class="nav__item"><a href="#">News</a></li>
-		  <li class="nav__item"><a href="#">Events</a></li>
-		  <li class="nav__item"><a href="#">Culture</a></li>
-		  <li class="nav__item"><a href="#">Blog</a></li>
-		</ul>
-	  </nav>
+<body>
+	<div class="container">
+		
+		<h1>freeCodeCamp Survey Form</h1>
+		<h2>Thank you for taking the time to help us improve the platform</h2>
+		<form action="#" class="form">
+			<section class="form__section">
+				<label for="name">Name</label>
+				<input type="text" name="name" id="name" required>
+			</section>
+			<section class="form__section">
+				<label for="email">Email</label>
+				<input type="email" name="email" id="email" required>
+			</section>
+			<section class="form__section">
+				<label for="age">Age (optional)</label>
+				<input type="number" name="age" id="age" min="16" max="100">
+			</section>
+			<section class="form__section">
+				<label for="current-job">Which option best describes your current role?</label>
+				<select name="current-job" id="current-job">
+					<option value="0" disabled selected>Select current role</option>
+					<option value="student">Student</option>
+					<option value="full-time-job">Full Time Job</option>
+					<option value="full-time-learner">Full Time Learner</option>
+					<option value="no-comments">Prefer not to say</option>
+					<option value="other">Other</option>
+				</select>
+			</section>
+			<section class="form__section">
+				<h3>Would you recommend freeCodeCamp to a friend?</h3>
+				<input type="radio" name="recommend" id="recommend-choice-yes" value="yes">
+				<label for="recommend-choice-yes">Definitely</label>
+				<input type="radio" name="recommend" id="recommend-choice-maybe" value="maybe">
+				<label for="recommend-choice-maybe">Maybe</label>
+				<input type="radio" name="recommend" id="recommend-choice-no" value="no">
+				<label for="recommend-choice-no">Not sure</label>
+			</section>
+			<section class="form__section">
+				<label for="favorite-feature">Which option best describes your current role?</label>
+				<select name="favorite-feature" id="favorite-feature">
+					<option value="0" disabled selected>Select an option</option>
+					<option value="challenges">Challenges</option>
+					<option value="projects">Projects</option>
+					<option value="community">Community</option>
+					<option value="open-source">Open Source</option>
+				</select>
+			</section>
+			<section class="form__section">
+				<h3>What would you like to see improved? (Check all that apply)</h3>
+				<input type="checkbox" name="improve" id="front-end-projects" value="front-end-projects">
+				<label for="improve-front-end-projects">Front-end Projects</label>
+				<input type="checkbox" name="improve" id="backend-end-projects" value="backend-end-projects">
+				<label for="improve-backend-end-projects">Back-end Projects</label>
+				<input type="checkbox" name="improve" id="data-visualization" value="data-visualization">
+				<label for="data-visualization">Data Visualization</label>
+				<input type="checkbox" name="improve" id="challenges" value="challenges">
+				<label for="challenges">Challenges</label>
+				<input type="checkbox" name="improve" id="open-source-community" value="open-source-community">
+				<label for="open-source-community">open-source-community</label>
+				<input type="checkbox" name="improve" id="open-source-community" value="open-source-community">
+				<label for="open-source-community">Open Source Community</label>
+				<input type="checkbox" name="improve" id="gitter-hep-rooms" value="gitter-hep-rooms">
+				<label for="gitter-hep-rooms">Gitter help rooms</label>
+				<input type="checkbox" name="improve" id="videos" value="videos">
+				<label for="videos">Videos</label>
+				<input type="checkbox" name="improve" id="city-meetups" value="city-meetups">
+				<label for="city-meetups">City Meetaps</label>
+				<input type="checkbox" name="improve" id="wiki" value="wiki">
+				<label for="wiki">Wiki</label>
+				<input type="checkbox" name="improve" id="additional-courses" value="additional-courses">
+				<label for="additional-courses">Additional Courses</label>
+			</section>
+			<section class="form__section">
+				<h3>Any comments or suggestions?</h3>
+				<textarea class="textarea" name="" id="" cols="30" rows="10"
+					placeholder="Enter your comment here..."></textarea>
+			</section>
+			<button class="submit-btn">Submit</button>
+		</form>
+	</div>
+</body>
 
-    <main class="main">
-      <section class="content">
-        <section class="hero">
-          <article class="hero__description">
-            <h2>Absolutely astonishing breaking news!</h2>
-            <p>
-              Organic raw denim Vice keffiyeh lomo Kickstarter art lomo
-              Kickstarter art four loko. Organic raw denim Vice keffiyeh lomo
-              Kickstarter art lomo Kickstarter art four loko.
-            </p>
-          </article>
-        </section>
-
-        <section class="news top-news">
-          <h2 class="news__title">
-            Top news <a href="#" class="news__more">+ more</a>
-          </h2>
-          <ul>
-            <li class="top-news__item">
-              <a href="#"
-                >Gastropub distillery Marfa farm-to-table, Etsy Truffaut
-                fingerstache.</a
-              >
-            </li>
-            <li class="top-news__item">
-              <a href="#"
-                >Squid lomo Kickstarter art lomo Kickstarter art party cronut
-                scenester.</a
-              >
-            </li>
-            <li class="top-news__item">
-              <a href="#"
-                >Organic raw denim lomo Kickstarter art Vice keffiyeh four
-                loko.</a
-              >
-            </li>
-            <li class="top-news__item">
-              <a href="#"
-                >Organic raw denim Vice keffiyeh lomo Kickstarter art lomo
-                Kickstarter art four loko.</a
-              >
-            </li>
-          </ul>
-        </section>
-
-        <section class="weather">
-          <span class="weather__location">Brighton, UK</span>
-          <span class="weather__desc">Sunny</span>
-          <span class="weather__today">
-            <img
-              class="weather__today__image"
-              src="images/weather.png"
-              alt="icon of a partially sunny day"
-            /><span class="weather__today__temp">13</span
-            ><span class="weather__today__deg">&deg;C</span>
-          </span>
-          <ul class="weather__next">
-            <li class="weather__next__item">
-              <span>Mon</span>
-              <img
-                class="weather__next__image"
-                src="images/sunny.png"
-                alt="icon of a sunny day"
-              />
-              <span>13 &deg;C</span>
-            </li>
-            <li class="weather__next__item">
-              <span>Tues</span>
-              <img
-                class="weather__next__image"
-                src="images/cloudy.png"
-                alt="icon of a cloudy day"
-              />
-              <span>13 &deg;C</span>
-            </li>
-            <li class="weather__next__item">
-              <span>Wed</span>
-              <img
-                class="weather__next__image"
-                src="images/cloudy.png"
-                alt="icon of a cloudy day"
-              />
-              <span>13 &deg;C</span>
-            </li>
-            <li class="weather__next__item">
-              <span>Thu</span>
-              <img
-                class="weather__next__image"
-                src="images/rain.png"
-                alt="icon of a rainy day"
-              />
-              <span>13 &deg;C</span>
-            </li>
-            <li class="weather__next__item">
-              <span>Fri</span>
-              <img
-                class="weather__next__image"
-                src="images/sunny.png"
-                alt="icon of a sunny day"
-              />
-              <span>13 &deg;C</span>
-            </li>
-          </ul>
-        </section>
-
-        <section class="news recent-news">
-          <h2 class="news__title">
-            Latest news <a href="#" class="news__more">+ more</a>
-          </h2>
-          <ul>
-            <li class="snippet">
-              <img
-                class="snippet__thumbnail"
-                src="images/dog.jpg"
-                alt="picture of a girl with a large, stuffed dog toy"
-              />
-
-              <div class="snippet__text">
-                <h3 class="snippet__title">
-                  <a href="#">Gastropub distillery Marfa farm-to-table</a>
-                </h3>
-                <p>
-                  Gastropub distillery Marfa farm-to-table, Etsy Truffaut
-                  fingerstache. Squid lomo Kickstarter art party cronut scenester.
-                  Organic raw denim Vice keffiyeh four loko. Squid lomo
-                  Kickstarter art party cronut scenester. Organic raw denim Vice
-                  keffiyeh four loko.Vice keffiyeh four loko. Squid lomo
-                  Kickstarter art party cronut scenester. Organic raw denim Vice
-                  keffiyeh four loko.Vice keffiyeh four loko. Squid lomo
-                  Kickstarter art party cronut scenester. Organic raw denim Vice
-                  keffiyeh four loko.
-                </p>
-              </div>
-            </li>
-
-            <li class="snippet">
-              <img
-                class="snippet__thumbnail"
-                src="images/dog.jpg"
-                alt="picture of a girl with a large, stuffed dog toy"
-              />
-              <div class="snippet__text">
-                <h3 class="snippet__title">
-                  <a href="#">Organic raw keffiyeh four loko.</a>
-                </h3>
-                <p>
-                  Vice keffiyeh four loko. Squid lomo Kickstarter art party cronut
-                  scenester. Organic raw denim Vice keffiyeh four loko.Vice
-                  keffiyeh four loko. Squid lomo Kickstarter art party cronut
-                  scenester. Organic raw denim Vice loko.
-                </p>
-              </div>
-            </li>
-            <li class="snippet">
-              <img
-                class="snippet__thumbnail"
-                src="images/dog.jpg"
-                alt="picture of a girl with a large, stuffed dog toy"
-              />
-              <div class="snippet__text">
-                <h3 class="snippet__title">
-                  <a href="#">Kickstarter art party cronut scenester.</a>
-                </h3>
-                <p>
-                  Gastropub distillery Marfa farm-to-table, Etsy Truffaut
-                  fingerstache. Squid lomo Kickstarter art party cronut scenester.
-                  Organic raw denim Vice keffiyeh four loko. Squid lomo
-                  Kickstarter art party cronut scenester. Organic raw denim Vice
-                  keffiyeh four loko.Vice keffiyeh four loko.
-                </p>
-              </div>
-            </li>
-            <li class="snippet">
-              <img
-                class="snippet__thumbnail"
-                src="images/dog.jpg"
-                alt="picture of a girl with a large, stuffed dog toy"
-              />
-              <div class="snippet__text">
-                <h3 class="snippet__title">
-                  <a href="#">Squid lomo Kickstarter art party cronut </a>
-                </h3>
-                <p>
-                  Gastropub distillery Marfa farm-to-table, Etsy Truffaut
-                  fingerstache. Squid lomo Kickstarter art party cronut scenester.
-                  Organic raw denim Vice keffiyeh four loko. Squid lomo
-                  Kickstarter art party cronut scenester. Organic raw denim Vice
-                  keffiyeh four loko.Vice keffiyeh four loko.
-                </p>
-              </div>
-            </li>
-          </ul>
-        </section>
-      </section>
-    </main>
-	<footer class="footer">
-	  <ul>
-		<li><a href="#">Contact us</a></li>
-		<li><a href="#">Follow us on Twitter</a></li>
-		<li><a href="#">RSS</a></li>
-	  </ul>
-	</footer>
-
-    <script src="./script/script.js"></script>
-  </body>
 </html>
