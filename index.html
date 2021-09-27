@@ -22,19 +22,19 @@
 		<form action="#" class="form">
 			<section class="form__section">
 				<label for="name">Name</label>
-				<input type="text" name="name" id="name" required>
+				<input type="text" name="name" id="name" required placeholder="Enter your name">
 			</section>
 			<section class="form__section">
 				<label for="email">Email</label>
-				<input type="email" name="email" id="email" required>
+				<input type="email" name="email" id="email" required placeholder="Enter your Email">
 			</section>
 			<section class="form__section">
 				<label for="age">Age (optional)</label>
-				<input type="number" name="age" id="age" min="16" max="100">
+				<input type="number" name="age" id="age" min="16" max="100" placeholder="Age">
 			</section>
 			<section class="form__section">
 				<label for="current-job">Which option best describes your current role?</label>
-				<select name="current-job" id="current-job">
+				<select name="current-job" id="current-job" required>
 					<option value="0" disabled selected>Select current role</option>
 					<option value="student">Student</option>
 					<option value="full-time-job">Full Time Job</option>
@@ -45,16 +45,22 @@
 			</section>
 			<section class="form__section">
 				<h3>Would you recommend freeCodeCamp to a friend?</h3>
-				<input type="radio" name="recommend" id="recommend-choice-yes" value="yes">
-				<label for="recommend-choice-yes">Definitely</label>
-				<input type="radio" name="recommend" id="recommend-choice-maybe" value="maybe">
-				<label for="recommend-choice-maybe">Maybe</label>
-				<input type="radio" name="recommend" id="recommend-choice-no" value="no">
-				<label for="recommend-choice-no">Not sure</label>
+				<label class="radio-label" for="recommend-choice-yes">
+					<input class="radio" type="radio" name="recommend" id="recommend-choice-yes" value="yes">
+					Definitely
+				</label>
+				<label class="radio-label" for="recommend-choice-maybe">
+					<input class="radio" type="radio" name="recommend" id="recommend-choice-maybe" value="maybe">
+					Maybe
+				</label>
+				<label class="radio-label" for="recommend-choice-no">
+					<input class="radio" type="radio" name="recommend" id="recommend-choice-no" value="no">
+					Not sure
+				</label>
 			</section>
 			<section class="form__section">
 				<label for="favorite-feature">Which option best describes your current role?</label>
-				<select name="favorite-feature" id="favorite-feature">
+				<select name="favorite-feature" id="favorite-feature" required>
 					<option value="0" disabled selected>Select an option</option>
 					<option value="challenges">Challenges</option>
 					<option value="projects">Projects</option>
@@ -64,28 +70,50 @@
 			</section>
 			<section class="form__section">
 				<h3>What would you like to see improved? (Check all that apply)</h3>
-				<input type="checkbox" name="improve" id="front-end-projects" value="front-end-projects">
-				<label for="improve-front-end-projects">Front-end Projects</label>
-				<input type="checkbox" name="improve" id="backend-end-projects" value="backend-end-projects">
-				<label for="improve-backend-end-projects">Back-end Projects</label>
-				<input type="checkbox" name="improve" id="data-visualization" value="data-visualization">
-				<label for="data-visualization">Data Visualization</label>
-				<input type="checkbox" name="improve" id="challenges" value="challenges">
-				<label for="challenges">Challenges</label>
-				<input type="checkbox" name="improve" id="open-source-community" value="open-source-community">
-				<label for="open-source-community">open-source-community</label>
-				<input type="checkbox" name="improve" id="open-source-community" value="open-source-community">
-				<label for="open-source-community">Open Source Community</label>
-				<input type="checkbox" name="improve" id="gitter-hep-rooms" value="gitter-hep-rooms">
-				<label for="gitter-hep-rooms">Gitter help rooms</label>
-				<input type="checkbox" name="improve" id="videos" value="videos">
-				<label for="videos">Videos</label>
-				<input type="checkbox" name="improve" id="city-meetups" value="city-meetups">
-				<label for="city-meetups">City Meetaps</label>
-				<input type="checkbox" name="improve" id="wiki" value="wiki">
-				<label for="wiki">Wiki</label>
-				<input type="checkbox" name="improve" id="additional-courses" value="additional-courses">
-				<label for="additional-courses">Additional Courses</label>
+				<label class="checkbox-label" for="improve-front-end-projects">
+					<input class="checkbox" type="checkbox" name="improve" id="front-end-projects" value="front-end-projects">
+					Front-end Projects
+				</label>
+				<label class="checkbox-label" for="improve-backend-end-projects">
+					<input class="checkbox" type="checkbox" name="improve" id="backend-end-projects" value="backend-end-projects">
+					Back-end Projects
+				</label>
+				<label class="checkbox-label" for="data-visualization">
+					<input class="checkbox" type="checkbox" name="improve" id="data-visualization" value="data-visualization">
+					Data Visualization
+				</label>
+				<label class="checkbox-label" for="challenges">
+					<input class="checkbox" type="checkbox" name="improve" id="challenges" value="challenges">
+					Challenges
+				</label>
+				<label class="checkbox-label" for="open-source-community">
+					<input class="checkbox" type="checkbox" name="improve" id="open-source-community" value="open-source-community">
+					open-source-community
+				</label>
+				<label class="checkbox-label" for="open-source-community">
+					<input class="checkbox" type="checkbox" name="improve" id="open-source-community" value="open-source-community">
+					Open Source Community
+				</label>
+				<label class="checkbox-label" for="gitter-hep-rooms">
+					<input class="checkbox" type="checkbox" name="improve" id="gitter-hep-rooms" value="gitter-hep-rooms">
+					Gitter help rooms
+				</label>
+				<label class="checkbox-label" for="videos">
+					<input class="checkbox" type="checkbox" name="improve" id="videos" value="videos">
+					Videos
+				</label>
+				<label class="checkbox-label" for="city-meetups">
+					<input class="checkbox" type="checkbox" name="improve" id="city-meetups" value="city-meetups">
+					City Meetaps
+				</label>
+				<label class="checkbox-label" for="wiki">
+					<input class="checkbox" type="checkbox" name="improve" id="wiki" value="wiki">
+					Wiki
+				</label>
+				<label class="checkbox-label" for="additional-courses">
+					<input class="checkbox" type="checkbox" name="improve" id="additional-courses" value="additional-courses">
+					Additional Courses
+				</label>
 			</section>
 			<section class="form__section">
 				<h3>Any comments or suggestions?</h3>
