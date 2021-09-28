@@ -10,6 +10,8 @@
 	--color-darkblue-alpha: rgba(27, 27, 50, 0.8);
 	--color-green: #37af65;
 	--color-grey: #495057;
+	--color-purple: #741e7c;
+	--color-purple-bright: #ea21fd;
 	--border-radius: 4px;
 
 	font-family: "Poppins", sans-serif;
@@ -72,6 +74,10 @@ label,
 h3 {
 	margin-bottom: 10px;
 	font-weight: normal;
+}
+
+select:invalid {
+	color: gray;
 }
 
 input,
@@ -146,12 +152,12 @@ textarea {
 	position: absolute;
 	top: -2px;
 	left: 1px;
-	color: rgb(116, 30, 124);
+	color: var(--color-purple);
 }
 
 .radio:checked:before {
 	content: "\f058";
-	color: #ea21fd;
+	color: var(--color-purple-bright);
 }
 
 .checkbox {
@@ -174,13 +180,13 @@ textarea {
 	position: absolute;
 	top: -2px;
 	left: 1px;
-	color: rgb(116, 30, 124);
+	color: var(--color-purple);
 	padding: 0 2px;
 }
 
 .checkbox:checked:before {
 	content: "\f14a";
-	color: #ea21fd;
+	color: var(--color-purple-bright);
 }
 
 
