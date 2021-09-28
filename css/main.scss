@@ -153,6 +153,35 @@ textarea {
 	content: "\f058";
 }
 
+.checkbox {
+	position: relative;
+	appearance: none;
+}
+
+.checkbox:focus {
+	box-shadow: none;
+}
+
+.checkbox:focus:before {
+	box-shadow: 0 0 0 3px rgb(0 123 255 / .25);
+}
+
+.checkbox:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 23px;
+	content: "\f0c8";
+	position: absolute;
+	top: -2px;
+	left: 1px;
+	color: rgb(116, 30, 124);
+	padding: 0 2px;
+}
+
+.checkbox:checked:before {
+	content: "\f14a";
+}
+
+
 .submit-btn {
 	font-family: inherit;
 	font-size: inherit;
