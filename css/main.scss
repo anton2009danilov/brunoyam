@@ -126,8 +126,31 @@ textarea {
 	align-items: center;
 }
 
-.radio-label {
+.radio {
+	position: relative;
 	appearance: none;
+}
+
+.radio:focus {
+	box-shadow: none;
+}
+
+.radio:focus:before {
+	box-shadow: 0 0 0 3px rgb(0 123 255 / .25);
+}
+
+.radio:before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 23px;
+	content: "\f111";
+	position: absolute;
+	top: -2px;
+	left: 1px;
+	color: rgb(116, 30, 124);
+}
+
+.radio:checked:before {
+	content: "\f058";
 }
 
 .submit-btn {
