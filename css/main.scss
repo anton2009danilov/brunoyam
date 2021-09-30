@@ -56,9 +56,20 @@ h2 {
 	margin-bottom: 40px;
 }
 
+h1,
+h2,
+h3,
+label {
+	user-select: none;
+}
+
 h3,
 label {
 	font-size: 1.125rem;
+}
+
+label {
+	cursor: pointer;
 }
 
 .form {
@@ -139,10 +150,6 @@ textarea {
 .textarea:empty:focus~.placeholder {
 	font-size: .8rem;
 	top: 36px;
-}
-
-.user-text:invalid~.placeholder {
-	color: red;
 }
 
 .placeholder {
