@@ -131,6 +131,16 @@ textarea {
 	top: 36px;
 }
 
+.textarea:empty~.placeholder {
+	font-size: 1rem;
+	top: 45px;
+}
+
+.textarea:empty:focus~.placeholder {
+	font-size: .8rem;
+	top: 36px;
+}
+
 .user-text:invalid~.placeholder {
 	color: red;
 }
@@ -144,8 +154,8 @@ textarea {
 }
 
 .placeholder--active {
-	font-size: .8rem;
-	top: 36px;
+	font-size: .8rem !important;
+	top: 36px !important;
 }
 
 .radio,
