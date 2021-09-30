@@ -10,6 +10,7 @@
 	--color-darkblue-alpha: rgba(27, 27, 50, 0.8);
 	--color-green: #37af65;
 	--color-grey: #495057;
+	--color-grey-bleak: #7a7e82;
 	--color-purple: #741e7c;
 	--color-purple-bright: #ea21fd;
 	--border-radius: 4px;
@@ -68,6 +69,7 @@ label {
 
 .form__section {
 	margin-bottom: 30px;
+	position: relative;
 }
 
 label,
@@ -116,6 +118,34 @@ option:focus {
 
 textarea {
 	resize: none;
+}
+
+.user-text {
+	padding-top: 17px;
+	padding-bottom: 8px;
+}
+
+.user-text:focus~.placeholder,
+.user-text:valid~.placeholder {
+	font-size: .8rem;
+	top: 36px;
+}
+
+.user-text:invalid~.placeholder {
+	color: red;
+}
+
+.placeholder {
+	color: var(--color-grey-bleak);
+	position: absolute;
+	top: 45px;
+	left: 11px;
+	transition: all .5s;
+}
+
+.placeholder--active {
+	font-size: .8rem;
+	top: 36px;
 }
 
 .radio,

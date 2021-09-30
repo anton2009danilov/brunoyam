@@ -22,12 +22,14 @@
 		<h2>Thank you for taking the time to help us improve the platform</h2>
 		<form action="#" class="form">
 			<section class="form__section">
-				<label for="name">Name</label>
-				<input type="text" name="name" id="name" required placeholder="Enter your name">
+				<h3>Name</h3>
+				<input class="user-text" type="text" name="name" id="name" required>
+				<label class="placeholder" for="name">Enter your name</label>
 			</section>
 			<section class="form__section">
-				<label for="email">Email</label>
-				<input type="email" name="email" id="email" required placeholder="Enter your Email">
+				<h3>Email</h3>
+				<input class="user-text" type="email" name="email" id="email" required>
+				<label class="placeholder" for="email" id="email-placeholder">Enter your Email</label>
 			</section>
 			<section class="form__section">
 				<label for="age">Age (optional)</label>
@@ -124,6 +126,8 @@
 			<button class="submit-btn">Submit</button>
 		</form>
 	</div>
+
+	<script src="./script/script.js"></script>
 </body>
 
 </html>
