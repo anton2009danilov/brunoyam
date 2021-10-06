@@ -406,13 +406,11 @@ header nav a {
 .burger__list {
 	position: absolute;
 	width: max-content;
-	display: flex;
+	display: none;
 	flex-direction: column;
 	background: #111;
 	top: 75px;
 	right: 0;
-	transition: all .7s;
-	opacity: 0;
 }
 
 .burger__list li:nth-of-type(3) {
